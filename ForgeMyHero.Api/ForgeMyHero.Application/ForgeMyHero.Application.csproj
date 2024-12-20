@@ -12,7 +12,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ForgeMyHero.Domain\ForgeMyHero.Domain.csproj" />
-    <ProjectReference Include="..\ForgeMyHero.Shared\ForgeMyHero.Shared.csproj" />
   </ItemGroup>
 
 </Project>

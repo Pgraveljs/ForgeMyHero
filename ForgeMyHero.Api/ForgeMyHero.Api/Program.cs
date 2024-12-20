@@ -1,15 +1,11 @@
-using Carter;
-using ForgeMyHero.Application.Warhammer.Race;
-using ForgeMyHero.Application.Warhammer.Race.Queries;
-using ForgeMyHero.Infrastructure;
-using ForgeMyHero.Infrastructure.Warhammer.Races;
+using ForgeMyHero.Infrastructure.Warhammer;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services
 builder.Services.AddCarter();
 builder.Services.AddSingleton<DapperDbContext>();
-builder.Services.AddScoped<IRaceRepository, RaceRepository>();
+builder.Services.AddScoped<IQueryRepository<WarhammerRace>, RaceRepository>();
 
 builder.Services.AddMediatR(config =>
 {

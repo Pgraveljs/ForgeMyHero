@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using System.Data;
 
-namespace ForgeMyHero.Infrastructure;
+namespace ForgeMyHero.Infrastructure.Warhammer;
 
 public class DapperDbContext
 {
