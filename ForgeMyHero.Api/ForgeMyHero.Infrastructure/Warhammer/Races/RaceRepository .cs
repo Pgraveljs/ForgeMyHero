@@ -1,7 +1,6 @@
 ﻿using Dapper;
 using ForgeMyHero.Application.Warhammer.Race;
 using ForgeMyHero.Domain.Warhammer.Entity;
-using System.Diagnostics;
 
 namespace ForgeMyHero.Infrastructure.Warhammer.Races;
 

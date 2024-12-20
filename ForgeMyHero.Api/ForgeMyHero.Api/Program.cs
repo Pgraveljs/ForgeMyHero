@@ -1,8 +1,8 @@
 using Carter;
-using ForgeMyHero.Application.Warhammer.Race.Queries;
-using ForgeMyHero.Infrastructure.Warhammer.Races;
-using ForgeMyHero.Infrastructure;
 using ForgeMyHero.Application.Warhammer.Race;
+using ForgeMyHero.Application.Warhammer.Race.Queries;
+using ForgeMyHero.Infrastructure;
+using ForgeMyHero.Infrastructure.Warhammer.Races;
 
 var builder = WebApplication.CreateBuilder(args);
 
