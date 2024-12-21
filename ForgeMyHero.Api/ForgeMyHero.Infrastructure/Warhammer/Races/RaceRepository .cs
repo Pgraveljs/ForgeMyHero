@@ -20,8 +20,10 @@ public class RaceRepository : IQueryRepository<WarhammerRace>
         return await connection.QueryAsync<WarhammerRace>(query);
     }
 
-    public Task<WarhammerRace> GetByIdAsync(int id)
+    public async Task<WarhammerRace> GetByIdAsync(int id)
     {
-        throw new NotImplementedException();
+        const string query = "SELECT [Id], [Name] FROM [ForgeMyHeroDb].[Warhammer].[Races] WHERE [Id] = @Id";
+        using var connection = _context.CreateConnection();
+        return await connection.QuerySingleOrDefaultAsync<WarhammerRace>(query, new { Id = id });
     }
 }

@@ -4,7 +4,7 @@ using MediatR;
 
 namespace ForgeMyHero.Application.Warhammer.Race.Queries;
 
-public class GetRacesQuery : IRequest<IEnumerable<WarhammerRace>> { }
+public record GetRacesQuery : IRequest<IEnumerable<WarhammerRace>> { }
 
 public class GetRacesQueryHandler : IRequestHandler<GetRacesQuery, IEnumerable<WarhammerRace>>
 {
