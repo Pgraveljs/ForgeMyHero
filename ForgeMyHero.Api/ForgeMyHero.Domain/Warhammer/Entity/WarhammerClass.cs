@@ -1,2 +1,2 @@
 ﻿namespace ForgeMyHero.Domain.Warhammer.Entity;
-public record WarhammerRace(int Id, string Name);
+public record WarhammerClass(int Id, string Name);

@@ -9,10 +9,7 @@ public class GetRaceByIdQueryHandler : IRequestHandler<GetRaceByIdQuery, Warhamm
 {
     private readonly IQueryRepository<WarhammerRace> _repository;
 
-    public GetRaceByIdQueryHandler(IQueryRepository<WarhammerRace> repository)
-    {
-        _repository = repository;
-    }
+    public GetRaceByIdQueryHandler(IQueryRepository<WarhammerRace> repository) => _repository = repository;
 
     public async Task<WarhammerRace> Handle(GetRaceByIdQuery request, CancellationToken cancellationToken)
     {

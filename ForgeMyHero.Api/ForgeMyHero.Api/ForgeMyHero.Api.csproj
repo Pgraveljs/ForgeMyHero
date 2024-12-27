@@ -17,4 +17,8 @@
     <ProjectReference Include="..\ForgeMyHero.Infrastructure\ForgeMyHero.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Dungeons&amp;Dragons\" />
+  </ItemGroup>
+
 </Project>

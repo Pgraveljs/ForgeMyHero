@@ -10,10 +10,7 @@ public class GetRacesQueryHandler : IRequestHandler<GetRacesQuery, IEnumerable<W
 {
     private readonly IQueryRepository<WarhammerRace> _repository;
 
-    public GetRacesQueryHandler(IQueryRepository<WarhammerRace> repository)
-    {
-        _repository = repository;
-    }
+    public GetRacesQueryHandler(IQueryRepository<WarhammerRace> repository) => _repository = repository;
 
     public async Task<IEnumerable<WarhammerRace>> Handle(GetRacesQuery request, CancellationToken cancellationToken)
     {
